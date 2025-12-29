@@ -1,18 +1,23 @@
 package studentManagementSystem;
 
 public class Student {
-	String name;
-	int age;
+	private String name;
+	private int age;
 	
-	Student(String name, int age){
-		this.name=name;
-		this.age=age;
-	}
-
+	public String getName() {return name;}
+	
+	public void setName(String name) {this.name=name;}
+	
+	public int getAge() {return age;}
+	
+	public void setAge(int age) {this.age=age;}
+	
 	public static void main(String[] args) {
-		Student s= new Student("Suresh", 19);
-		System.out.println("Name of Student: "+s.name);
-		System.out.println("Age of Student: "+s.age);
+		Student s= new Student();
+		s.setName("Suvashna");
+		s.setAge(20);
+		System.out.println("Name of Student: "+s.getName());
+		System.out.println("Age of Student: "+s.getAge());
 		
 	}
 
